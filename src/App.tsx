@@ -1,14 +1,18 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React, { useState } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+import { Route } from 'react-router-dom';
+import Daily from './pages/daily/index';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-
   return (
-    <div className="App">
-      양상훈의 블로그
-    </div>
-  )
+    <BrowserRouter>
+      <h1>양상훈의 블로그</h1>
+      <Route path={'/blog/daily'} exact component={Daily} />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
