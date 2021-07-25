@@ -10,6 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <h1>양상훈의 블로그</h1>
+      <a href="/blog/daily">일기</a>
       <Route path={'/blog/daily'} exact component={Daily} />
     </BrowserRouter>
   );
