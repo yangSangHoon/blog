@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { Route } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import Daily from './pages/daily/index';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename="/blog">
       <h1>양상훈의 블로그</h1>
-      <a href="/blog/daily">일기</a>
-      <Route path={'/blog/daily'} exact component={Daily} />
-    </BrowserRouter>
+      <Link to="/daily">일기</Link>
+      <Route path={'/daily'} exact component={Daily} />
+    </HashRouter>
   );
 }
 
