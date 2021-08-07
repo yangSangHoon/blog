@@ -12,6 +12,7 @@
   },
   "homepage": "https://yangSangHoon.github.io/blog",
   "dependencies": {
+    "@types/styled-components": "^5.1.11",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-router-dom": "^5.2.0",
